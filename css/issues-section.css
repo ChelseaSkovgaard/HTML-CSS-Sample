@@ -1,0 +1,177 @@
+.issues {
+	margin-top: 40px;
+}
+
+.issues__hed {
+	font-size: 38px;
+	font-style: italic;
+	font-weight: 700;
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.issues__hed span {
+	background-image: url(../images/texture/texture-dark-fill.gif);
+	background-position: 0 12px;
+	background-repeat: repeat-x;
+	background-size: 200px;
+	color: #f5ead3;
+	display: inline;
+	padding: 0 10px;
+}
+
+.issues__body {
+	background-color: #f3a83c;
+	background-image: url(../images/texture/texture-orange.png);
+	background-size: 200px;
+}
+
+.issues__arrow {
+	background-image: url(../images/texture/arrow-down.png);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 60px 25px;
+	height: 25px;
+	width: 100%;
+}
+
+.issues-list {
+	overflow: hidden;
+	padding-top: 50px;
+	position: relative;
+	margin: -25px 0 0;
+}
+
+.issues-list .entry__body {
+	padding: 0;
+}
+
+.issues-list__hed {
+	font-style: italic;
+	font-weight: 700;
+	margin: 0 0 10px;
+	overflow: hidden;
+	padding-bottom: 5px;
+	position: relative;
+}
+
+.issues-list__hed span {
+	background-image: url(../images/texture/texture-dark-fill.gif);
+	background-position: 0 7px;
+	background-size: 200px;
+	background-repeat: repeat-x;
+	color: #f5ead3;
+	display: inline;
+	padding: 0 10px;
+}
+
+.issues-list__container {
+	list-style: none;
+	margin: 0;
+}
+
+.issues-list__item {
+	position: relative;
+}
+
+.issues-list__item-dek {
+	padding-bottom: 15px;
+}
+
+/* Responsive Styles */
+@media screen and (min-width:480px) {
+	.issues-list:before {
+		background-image: url(../images/texture/pattern-light.png);
+		background-size: 50px;
+		content: "";
+		position: absolute;
+		width: 200%;
+		height: 200%;
+		top: -50%;
+		left: -50%;
+		z-index: -1;
+		transform: rotate(-30deg);
+		-webkit-transform: rotate(-30deg);
+	}
+}
+
+@media screen and (min-width:480px) and (min-width:600px) {
+	.issues-list:before {
+		background-size: 100px;
+	}
+}
+
+@media screen and (min-width:1320px) {
+	.issues-list__hed {
+		font-size: 30px;
+	}
+}
+
+@media screen and (min-width:600px) {
+	.issues__hed {
+		font-size: 45px;
+	}
+	.issues-list {
+		columns: 2;
+		-webkit-columns: 2;
+		-moz-columns: 2;
+		page-break-inside: avoid;
+		-webkit-column-break-inside: avoid;
+		break-inside: avoid;
+		-moz-column-break-inside: avoid;
+	}
+	.issues-list__hed {
+		font-size: 30px;
+	}
+	.issues-list__item {
+		width: 90%;
+	}
+}
+
+@media screen and (min-width:768px) {
+	.issues__hed {
+		font-size: 50px;
+	}
+	.issues-list {
+		padding-bottom: 75px;
+	}
+	.issues-list__hed {
+		font-size: 30px;
+	}
+	.issues-list__hed span {
+		background-position: 0 8px;
+	}
+	.issues-list__item {
+			margin: 0 0 0 30px;
+			padding-left: 10px
+	}
+	.issues-list__item:before {
+		background-image: url(../images/svg/bullet.svg);
+		content: "";
+		display: inline-block;
+		position: absolute;
+		left: -30px;
+		top: 6px;
+		width: 30px;
+		height: 30px;
+	}
+}
+
+@media screen and (min-width:980px) {
+	.issues__hed {
+		font-size: 65px;
+	}
+}
+
+@media screen and (min-width:1200px) {
+	.issues__hed {
+		font-size: 70px;
+	}
+	.issues-list__hed {
+		font-size: 30px;
+	}
+}
+

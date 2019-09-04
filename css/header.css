@@ -1,0 +1,163 @@
+/* Header Styles */
+.header {
+	display: flex;
+	display: -webkit-box;
+	flex-wrap: nowrap;
+	margin-bottom: 20px
+}
+
+.header__left {
+	width: 60%
+}
+
+.header__right {
+	align-self: flex-end;
+	position: relative;
+	text-align: right;
+	width: 40%;
+	z-index: 5;
+}
+
+.header__hed {
+	margin: 0;
+	padding: 0;
+}
+
+.header .lettermark {
+	height: 45px;
+	width: 170px;
+}
+
+/* Header Social Media Styles */
+.header .nav-social {
+	display: none;
+}
+
+.header .nav-social__item {
+	display: inline-block;
+	margin-left: 4px;
+}
+
+.header .nav-social__link:hover svg {
+	fill: #ff7070;
+}
+
+.header .nav-social svg {
+	fill: #122a2d;
+	height: 32px;
+	width: 32px;
+}
+
+/* Header Donation Button */
+.donate__button {
+	color: #122a2d;
+	background: #ff7070;
+	display: inline-block;
+	font-weight: 700;
+	font-style: italic;
+	padding:10px 15px;
+	text-transform: uppercase;
+	transform: skew(-19deg);
+	-webkit-transform: skew(-19deg);
+}
+
+.donate__button:hover {
+	background: #f3a83c;
+}
+
+.donate__button span {
+	display: inline-block;
+	transform: skew(19deg);
+	-webkit-transform: skew(19deg);
+}
+
+/* Navigation Not Visible on Mobile */
+.nav {
+	display: none
+}
+
+
+/* Responsive Styles */
+@media screen and (min-width:480px) {
+	.header__left {
+		width: 45%
+	}
+	.header__right {
+		width: 55%
+	}
+	.header .lettermark {
+		height: 53px;
+		width: 200px;
+	}
+	.header .nav-social {
+		display: inline-block;
+		margin-right: 10px;
+		vertical-align: middle;
+	}
+	.header .nav-social__item {
+		margin-right: 20px;
+	}
+	.donate__button {
+		font-size: 18px;
+	}
+}
+
+@media screen and (min-width:768px) {
+	.header__right {
+		align-self: flex-start;
+	}
+	.header .lettermark {
+		height: 98px;
+		width: 370px;	
+	}
+	.header .nav-social svg {
+		height: 36px;
+		width: 36px;
+	}
+	.donate__button {
+		font-size: 24px;
+		padding: 15px 20px;
+	}
+	.nav {
+		display: block;
+		text-transform: uppercase;
+		margin-left: 40px;
+		margin-top: 20px;
+	}
+	.nav__item {
+		display: inline-block;
+		margin-right: 10px;
+	}
+	.nav__link {
+		color: #122a2d;
+		font-size: 14px;
+		letter-spacing: 1px;
+		font-weight: 700;
+	}
+	.nav__link:hover {
+		color: #ff7070;
+		text-decoration: none;
+	}
+}
+
+@media screen and (min-width:768px) and (min-width:980px) {
+	.nav {
+			margin-left: 45px
+	}
+	.nav__link {
+		font-size: 15px;
+		letter-spacing: 1.5px
+	}
+}
+
+@media screen and (min-width:980px) {
+	.header .lettermark {
+		height: 111px;
+		width: 420px;
+	}
+	.header .nav-social svg {
+		height: 40px;
+		width: 40px;
+	}
+}
+

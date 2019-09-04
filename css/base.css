@@ -1,0 +1,253 @@
+/* Base Body Styles Applied Across Elements */
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url(../images/texture/canvas.gif);
+	background-size: 200px;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: neue-haas-unica, sans-serif;
+	line-height: 1
+}
+
+html {
+  font-size: 16px
+}
+
+
+#container {
+	max-width: 1200px;
+	position: relative;
+	margin: 0 auto;
+	padding: 15px 15px 0;
+}
+
+/* Base Styles */
+.base__hed {
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 5px;
+	font-size: 38px;
+	font-weight: 700;
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+.base__hed span {
+	display: inline;
+	padding: 010px;
+	color: #f5ead3;
+	background-image: url(../images/texture/texture-dark-fill.gif);
+	background-size: 200px;
+	background-position: 0 12px;
+	background-repeat: repeat-x;
+}
+
+.base__body h1,
+.base__body h2,
+.base__body h3,
+.base__body h4,
+.base__body h5,
+.base__body h6 {
+	line-height: 1.15;
+	margin: 1em 0 .35em;
+	font-weight: 700;
+}
+
+.base__body h1 {
+	font-size: 1.75rem;
+}
+
+.base__body h2 {
+	font-size: 1.5rem;
+}
+
+.base__body h3 {
+	font-size: 20px;
+}
+
+.base__body h4 {
+	font-size: 1.125rem;
+}
+
+.base__body h5 {
+	font-size: 16px;
+}
+
+.base__body h6,
+.base__body p {
+	font-size: .875rem;
+}
+
+.base__body p {
+	margin: 0 0 1em;
+	line-height: 1.3;
+}
+
+.base__body ol,
+.base__body ul {
+	margin: 1rem 0 1rem 1.5rem;
+}
+
+.base__body ul {
+	list-style: disc;
+}
+
+.base__body ol {
+	list-style-type: decimal;
+}
+
+.base__body li {
+	margin: .5em 0;
+}
+
+.base__body b,
+.base__body strong,
+.base__body th {
+	font-weight: 700;
+}
+
+.base__body em,
+.base__body i {
+	font-style: italic;
+}
+
+
+
+.base__body picture img {
+	max-width: none;
+	width: 100%;
+}
+
+.base__body>:first-child {
+	margin-top: 0
+}
+
+.base__body>:last-child {
+	margin-bottom: 0
+}
+
+.base__body:after {
+	content: "";
+	display: table;
+	clear: both
+}
+
+@media screen and (min-width:1050px) {
+	.base__body ol,
+	.base__body ul {
+			margin: 1.5rem 0 1rem 3.5rem
+	}
+	.base__body li {
+			margin: .75em 0
+	}
+}
+
+
+@media screen and (min-width:600px) {
+	.base__hed {
+			font-size: 2.8125rem
+	}
+	.base__body h1 {
+			font-size: 2.25rem
+	}
+	.base__body h2 {
+			font-size: 2rem
+	}
+	.base__body h3 {
+			font-size: 1.75rem
+	}
+	.base__body h4 {
+			font-size: 1.5rem
+	}
+	.base__body h5 {
+			font-size: 20px
+	}
+	.base__body h6 {
+			font-size: 1rem
+	}
+	.base__body ol,
+	.base__body ul {
+			margin: 1rem 0 1rem 40px
+	}
+	.base__body blockquote {
+			margin: 2rem 0;
+			padding: 20px 2rem
+	}
+}
+
+@media screen and (min-width:768px) {
+	.base__hed {
+			font-size: 50px;
+	}
+	.base__body {
+			padding: 30px;
+			font-size: 18px;
+	}
+	.base__body p {
+			font-size: 18px;
+	}
+}
+
+@media screen and (min-width:980px) {
+	.base__hed {
+			font-size: 4.0625rem
+	}
+	.base__body h1 {
+			font-size: 3rem
+	}
+	.base__body h2 {
+			font-size: 2.75rem
+	}
+	.base__body h3 {
+			font-size: 40px
+	}
+	.base__body h4 {
+			font-size: 2.25rem
+	}
+	.base__body h5 {
+			font-size: 2rem
+	}
+	.base__body h6 {
+			font-size: 1.75rem
+	}
+	.base__body p {
+			font-size: 1.1875rem
+	}
+	.base__body .alignwide {
+			margin-left: -2em;
+			margin-right: -2em;
+			width: calc(100% + 4em);
+			max-width: none
+	}
+	.base__body .callout {
+			font-size: 24px
+	}
+
+}
+
+@media screen and (min-width:1200px) {
+	.base__hed {
+			font-size: 70px
+	}
+	.base__body h1 {
+			font-size: 3.4375rem
+	}
+	.base__body h2 {
+			font-size: 3rem
+	}
+	.base__body h3 {
+			font-size: 2.75rem
+	}
+	.base__body h4 {
+			font-size: 40px
+	}
+	.base__body h5 {
+			font-size: 2.25rem
+	}
+	.base__body h6 {
+			font-size: 2rem
+	}
+
+}

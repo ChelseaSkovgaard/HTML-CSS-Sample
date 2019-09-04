@@ -1,0 +1,201 @@
+.signup {
+	background-color: #122a2d;
+	background-image: url(../images/texture/texture-dark.png);
+	background-size: 200px;
+	margin-top: 50px;
+}
+
+.signup__hed {
+	font-size: 38px;
+	font-weight: 700;
+	font-style: italic;
+	overflow: hidden;
+	padding-bottom: 5px;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	top: -20px;
+}
+
+.signup__hed span {
+	background-image: url(../images/texture/texture-orange-fill.gif);
+	background-size: 200px;
+	background-position: 0 12px;
+	background-repeat: repeat-x;
+	color: #122a2d;
+	display: inline;
+	padding: 0 10px;
+}
+
+.signup__dek {
+	color: #f5ead3;
+	font-size: 14px;
+	font-weight: 600;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 0 20px 15px;
+	text-align: center;
+}
+
+.signup__dek small {
+	display: block;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.0625rem;
+	padding: 10px 0;
+}
+
+.signup__label {
+	padding-bottom: 10px;
+}
+
+.signup .wpcf7 form.sent p {
+	display: none;
+}
+
+.signup .wpcf7 {
+	margin: 10px;
+}
+
+.signup .wpcf7 p {
+	display: inline;
+}
+
+.signup .wpcf7 p+p {
+	margin-left: 20px;
+}
+
+.signup .wpcf7 .your-email {
+	overflow: hidden;
+	-webkit-transform: skew(-30deg);
+	transform: skew(-30deg);
+	display: inline-block;
+	background-color: #f5ead3;
+	height: 40px;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.signup .wpcf7 .your-email input[type=email] {
+	border: 0;
+	height: 40px;
+	margin-left: 25px;
+	font-size: 18px;
+	color: #122a2d;
+	background: transparent;
+	vertical-align: baseline;
+	-webkit-transform: skew(30deg);
+	transform: skew(30deg);
+}
+
+.signup .wpcf7 .your-email input[type=email]::-webkit-input-placeholder {
+	color: rgba(18, 42, 45, .5);
+}
+
+.signup .wpcf7 .your-email input[type=email]::-moz-placeholder {
+	color: rgba(18, 42, 45, .5);
+}
+
+.signup .wpcf7 .your-email input[type=email]:-ms-input-placeholder,
+.signup .wpcf7 .your-email input[type=email]::-ms-input-placeholder {
+	color: rgba(18, 42, 45, .5);
+}
+
+.signup .wpcf7 .your-email input[type=email]::placeholder {
+	color: rgba(18, 42, 45, .5);
+}
+
+.signup .submit-container {
+	background-color: #ff7070;
+	display: inline-block;
+	height: 40px;
+	padding-left: 20px;
+	-webkit-transform: skew(-30deg);
+	transform: skew(-30deg);
+}
+
+.signup .submit-container:hover {
+	background-color: #f3a83c
+}
+
+.signup .submit-container input[type=submit] {
+	background: transparent;
+	border: 0;
+	color: #122a2d;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: 800;
+	height: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	font-style: italic;
+	-webkit-transform: skew(30deg);
+	transform: skew(30deg);
+	vertical-align: baseline;
+}
+
+.signup span.wpcf7-not-valid-tip {
+	color: #ff7070;
+	text-align: left;
+	transform: skew(30deg);
+	-webkit-transform: skew(30deg);
+}
+
+.signup div.wpcf7-acceptance-missing,
+.signup div.wpcf7-validation-errors {
+	border: 1px solid #ff7070;
+	padding-top: .3125rem;
+	padding-bottom: .5rem;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.0625rem;
+}
+
+.signup div.wpcf7-mail-sent-ok {
+	border: 1px solid #f5ead3;
+	padding-top: .3125rem;
+	padding-bottom: .5rem;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.0625rem;
+}
+
+
+/* Responsive Styles */
+@media screen and (min-width:480px) {
+	.signup .wpcf7 .your-email {
+		margin-bottom: -12px;
+		width: 50%;
+	}
+}
+
+@media screen and (min-width:600px) {
+	.signup__hed {
+		font-size: 2.8125rem;
+	}
+}
+
+@media screen and (min-width:768px) {
+	.signup__hed {
+		font-size: 50px
+	}
+	.signup__label {
+		font-size: 18px
+	}
+	.signup .wpcf7 .your-email {
+		height: 55px;
+		margin-bottom: -18px;			
+	}
+	.signup .submit-container,
+	.signup .submit-container input[type=submit],
+	.signup .wpcf7 .your-email input[type=email] {
+		height: 55px;
+	}
+}
+
+@media screen and (min-width:980px) {
+	.signup .submit-container input[type=submit],
+	.signup .wpcf7 .your-email input[type=email] {
+		font-size: 24px;
+	}
+}
