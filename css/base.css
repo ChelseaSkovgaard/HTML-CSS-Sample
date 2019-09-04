@@ -1,4 +1,4 @@
-/* Base Body Styles Applied Across Elements */
+/* Base Body Styles Applied Across Project */
 body {
 	margin: 0;
 	padding: 0;
@@ -12,36 +12,35 @@ body {
 }
 
 html {
-  font-size: 16px
+  font-size: 16px;
 }
 
-
 #container {
-	max-width: 1200px;
-	position: relative;
 	margin: 0 auto;
+	max-width: 1200px;
 	padding: 15px 15px 0;
+	position: relative;
 }
 
 /* Base Styles */
 .base__hed {
-	position: relative;
-	overflow: hidden;
-	padding-bottom: 5px;
 	font-size: 38px;
-	font-weight: 700;
 	font-style: italic;
+	font-weight: 700;
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 5px;
 	text-transform: uppercase;
 }
 
 .base__hed span {
-	display: inline;
-	padding: 010px;
-	color: #f5ead3;
 	background-image: url(../images/texture/texture-dark-fill.gif);
 	background-size: 200px;
 	background-position: 0 12px;
 	background-repeat: repeat-x;
+	color: #f5ead3;
+	display: inline;
+	padding: 0 10px;
 }
 
 .base__body h1,
@@ -50,17 +49,17 @@ html {
 .base__body h4,
 .base__body h5,
 .base__body h6 {
+	font-weight: 700;
 	line-height: 1.15;
 	margin: 1em 0 .35em;
-	font-weight: 700;
 }
 
 .base__body h1 {
-	font-size: 1.75rem;
+	font-size: 28px;
 }
 
 .base__body h2 {
-	font-size: 1.5rem;
+	font-size: 24px;
 }
 
 .base__body h3 {
@@ -68,7 +67,7 @@ html {
 }
 
 .base__body h4 {
-	font-size: 1.125rem;
+	font-size: 18px;
 }
 
 .base__body h5 {
@@ -77,7 +76,7 @@ html {
 
 .base__body h6,
 .base__body p {
-	font-size: .875rem;
+	font-size: 14px;
 }
 
 .base__body p {
@@ -113,141 +112,130 @@ html {
 	font-style: italic;
 }
 
-
-
 .base__body picture img {
 	max-width: none;
 	width: 100%;
 }
 
 .base__body>:first-child {
-	margin-top: 0
+	margin-top: 0;
 }
 
 .base__body>:last-child {
-	margin-bottom: 0
+	margin-bottom: 0;
 }
 
 .base__body:after {
 	content: "";
 	display: table;
-	clear: both
+	clear: both;
 }
 
 @media screen and (min-width:1050px) {
 	.base__body ol,
 	.base__body ul {
-			margin: 1.5rem 0 1rem 3.5rem
+		margin: 1.5rem 0 1rem 3.5rem;
 	}
 	.base__body li {
-			margin: .75em 0
+		margin: .75em 0;
 	}
 }
 
 
 @media screen and (min-width:600px) {
 	.base__hed {
-			font-size: 2.8125rem
+		font-size: 45px;
 	}
 	.base__body h1 {
-			font-size: 2.25rem
+		font-size: 36px;
 	}
 	.base__body h2 {
-			font-size: 2rem
+		font-size: 32px;
 	}
 	.base__body h3 {
-			font-size: 1.75rem
+		font-size: 28px;
 	}
 	.base__body h4 {
-			font-size: 1.5rem
+		font-size: 24px;
 	}
 	.base__body h5 {
-			font-size: 20px
+		font-size: 20px;
 	}
 	.base__body h6 {
-			font-size: 1rem
+		font-size: 16px;
 	}
 	.base__body ol,
 	.base__body ul {
-			margin: 1rem 0 1rem 40px
-	}
-	.base__body blockquote {
-			margin: 2rem 0;
-			padding: 20px 2rem
+		margin: 1rem 0 1rem 40px;
 	}
 }
 
 @media screen and (min-width:768px) {
 	.base__hed {
-			font-size: 50px;
+		font-size: 50px;
 	}
 	.base__body {
-			padding: 30px;
-			font-size: 18px;
+		padding: 30px;
+		font-size: 18px;
 	}
 	.base__body p {
-			font-size: 18px;
+		font-size: 18px;
 	}
 }
 
 @media screen and (min-width:980px) {
 	.base__hed {
-			font-size: 4.0625rem
+		font-size: 65px;
 	}
 	.base__body h1 {
-			font-size: 3rem
+		font-size: 48px;
 	}
 	.base__body h2 {
-			font-size: 2.75rem
+		font-size: 44px;
 	}
 	.base__body h3 {
-			font-size: 40px
+		font-size: 40px;
 	}
 	.base__body h4 {
-			font-size: 2.25rem
+		font-size: 36px;
 	}
 	.base__body h5 {
-			font-size: 2rem
+		font-size: 32px;
 	}
 	.base__body h6 {
-			font-size: 1.75rem
+		font-size: 28px;
 	}
 	.base__body p {
-			font-size: 1.1875rem
+		font-size: 19px;
 	}
-	.base__body .alignwide {
-			margin-left: -2em;
-			margin-right: -2em;
-			width: calc(100% + 4em);
-			max-width: none
-	}
-	.base__body .callout {
-			font-size: 24px
-	}
-
+	/* .base__body .alignwide {
+		margin-left: -2em;
+		margin-right: -2em;
+		max-width: none;
+		width: calc(100% + 4em);	
+	} */
 }
 
 @media screen and (min-width:1200px) {
 	.base__hed {
-			font-size: 70px
+		font-size: 70px;
 	}
 	.base__body h1 {
-			font-size: 3.4375rem
+		font-size: 55px;
 	}
 	.base__body h2 {
-			font-size: 3rem
+		font-size: 48px;
 	}
 	.base__body h3 {
-			font-size: 2.75rem
+		font-size: 44px;
 	}
 	.base__body h4 {
-			font-size: 40px
+		font-size: 40px;
 	}
 	.base__body h5 {
-			font-size: 2.25rem
+		font-size: 36px;
 	}
 	.base__body h6 {
-			font-size: 2rem
+		font-size: 32px;
 	}
-
 }
